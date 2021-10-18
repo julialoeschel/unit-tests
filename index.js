@@ -1,9 +1,11 @@
-function getGreetin(name = 'you') {
-  return `Hello ${name}!` //template literal
-  //return 'hello ' + name + '!'
-}
+import { getGreetin } from './getGreetin.js'
+import { replaceName } from './replaceName.js'
 
-function replaceName(text, name, newName) {
-  return text.replaceAll(name, newName)
-}
-console.log(replaceName('hello Jane skjd idid Jane', 'Jane', 'julia'))
+console.log(
+  replaceName(
+    'hello Jane, sometest text and another name: Jane',
+    'Jane',
+    'julia'
+  )
+)
+console.log(getGreetin())
