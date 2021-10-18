@@ -3,9 +3,9 @@ import { replaceName } from './replaceName.js'
 
 console.log(
   replaceName(
-    'hello Jane, sometest text and another name: Jane',
+    'hello Jane, sometest text and another name: Fixi',
     'Jane',
     'julia'
   )
 )
-console.log(getGreetin())
+console.log(getGreetin('juju'))
