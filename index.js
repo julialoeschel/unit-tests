@@ -1,4 +1,4 @@
-import { getGreetin } from './getGreetin.js'
+import { getGreetin } from './getGreeting.js'
 import { replaceName } from './replaceName.js'
 
 console.log(
@@ -8,4 +8,4 @@ console.log(
     'julia'
   )
 )
-console.log(getGreetin('juju'))
+console.log(getGreeting('juju'))
