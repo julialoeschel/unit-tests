@@ -1,1 +1,5 @@
-console.log("hello node");
+console.log('hello node')
+
+function getGreetin(name = 'you') {
+  return 'hello ' + name + '!'
+}
