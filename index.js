@@ -1,5 +1,5 @@
-console.log('hello node')
-
 function getGreetin(name = 'you') {
-  return 'hello ' + name + '!'
+  return `Hello ${name}!` //template literal
+  //return 'hello ' + name + '!'
 }
+console.log(getGreetin('Julia'))
