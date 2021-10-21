@@ -39,7 +39,7 @@ describe('people', () => {
   })
 
   describe('getNameAndAge', () => {
-    it.skip('returns an array of formatted strings like this: "Skywalker (23)"', () => {
+    it('returns an array of formatted strings like this: "Skywalker (23)"', () => {
       const result = getNameAndAge(people)
       expect(result).toEqual([
         'Doe (21)',
@@ -72,7 +72,7 @@ describe('people', () => {
   })
 
   describe('getPeopleByAge', () => {
-    it.skip('returns an array of people of a certain age', () => {
+    it('returns an array of people of a certain age', () => {
       const result = getPeopleByAge(people, 23)
       expect(result).toEqual([
         {
@@ -88,14 +88,14 @@ describe('people', () => {
   })
 
   describe('getPeopleNamesOlderThan', () => {
-    it.skip('returns an array of people older than a certain age', () => {
+    it('returns an array of people older than a certain age', () => {
       const result = getPeopleNamesOlderThan(people, 30)
       expect(result).toEqual(['Max Mustermann', 'Erika Musterfrau'])
     })
   })
 
   describe('getPeopleByLastName', () => {
-    it.skip('returns an array of people of a certain lastName', () => {
+    it('returns an array of people of a certain lastName', () => {
       const result = getPeopleByLastName(people, 'Doe')
       expect(result).toEqual([
         {

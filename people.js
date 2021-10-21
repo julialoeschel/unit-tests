@@ -3,23 +3,38 @@ export function getFirstNames(people) {
 }
 
 export function getFullNames(people) {
-  const abc = people.map(person => `${person.firstName} ${person.lastName}`)
-  return abc
+  const fullNames = people.map(
+    person => `${person.firstName} ${person.lastName}`
+  )
+  return fullNames
 }
 
-export function getNameAndAge(people) {}
+export function getNameAndAge(people) {
+  const xx = people.map(person => `${person.lastName} (${person.age})`)
+  return xx
+}
 
 export function getAgesOfFriends(people, id) {}
 
 export function getFullNamesSortedByAge(people) {}
 
-export function getPeopleByAge(people, age) {}
+export function getPeopleByAge(people, age) {
+  return people.filter(person => person.age === age)
+}
 
-export function getPeopleNamesOlderThan(people, age) {}
+export function getPeopleNamesOlderThan(people, age) {
+  return people
+    .filter(person => person.age > age)
+    .map(person => `${person.firstName} ${person.lastName}`)
+}
 
-export function getPeopleByLastName(people, lastName) {}
+export function getPeopleByLastName(people, lastName) {
+  return people.filter(person => person.lastName === lastName)
+}
 
-export function findPersonById(people, id) {}
+export function findPersonById(people, id) {
+  return people.filter(person => person.id === id)
+}
 
 export function findPeopleByIds(people, ids) {}
 
