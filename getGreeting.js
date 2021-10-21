@@ -1,7 +1,6 @@
 export function getGreeting(name = 'you') {
   if (name === 'Jerry') {
-    return `Hello Coach!`
+    return 'Hello Coach!'
   }
-  return `Hello ${name}!` //template literal
-  //return 'hello ' + name + '!'
+  return `Hello ${name}!` // template literal or f-String
 }
